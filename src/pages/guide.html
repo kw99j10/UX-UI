@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--진행일정 화면-->
+<!--안내 및 내규 화면-->
 <head>
-    <title>Schedule</title>
+    <title>Guidance</title>
     <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,44 +24,49 @@
 </head>
 
 <body>
-    <!--메뉴 헤더 양식-->
+
+
     <!-- header -->
-    <div class="header position-sticky border-3 border-top border-white bg-cover">
+<div class="header position-sticky border-3 border-top border-primary bg-dark">
     <!-- navigation start -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-default">
-            <a class="navbar-brand" href="main.html"><img src="../assets/images/klogo.jpg" alt="" /></a>
-            <button class="navbar-toggler collapsed" type="button" style="background-color: rosybrown;" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="main.html">안내 및 내규<img src="../assets/images/klogo.jpg" alt="" /></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar top-bar mt-0"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
       </button>
             <div class="collapse navbar-collapse" id="navbar-default">
-                <button class="navbar-toggler collapsed" type="button" style="background-color: rosybrown;" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-times"></i>
         </button>
-                <ul class="navbar-nav ms-auto me-lg-3 " >
+                <ul class="navbar-nav ms-auto me-lg-3 ">
+                    <li class="nav-item dropdown disabled">
+                        <a class="nav-link d-lg-none" href="#">
+              Menu
+            </a>
+                    </li>
 
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="menu-1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
-                    Notice
-                    </a>
-                        <ul class="dropdown-menu  dropdown-menu-arrow" style="border-style: solid; border-color: black;" aria-labelledby="menu-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
+              Homepages
+            </a>
+                        <ul class="dropdown-menu  dropdown-menu-arrow " aria-labelledby="menu-1">
                             <li>
-                                <a class="dropdown-list-group-item"  href="notification.html">
+                                <a class="dropdown-list-group-item " href="../pages/fitness-coach.html">
 
 
-                                    <h4 class="h5">공지사항</h4>
+                                    <h4 class="h5">Fitness<span class="badge bg-success ms-2 py-1">New</span></h4>
                                     <p class="text-muted mb-0 font-12">
-                                        졸업논문 관련 공지 알림
+                                        Fitness landing page
                                     </p>
 
 
                                 </a>
 
                             </li>
-                            
-                            <!--<li>
+                            <li>
                                 <a class="dropdown-list-group-item " href="../index.html">
 
 
@@ -112,43 +117,43 @@
 
                                 </a>
 
-                            </li>-->
+                            </li>
 
                         </ul>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
-                 Guide
-                    </a>
-                    <ul class="dropdown-menu  dropdown-menu-arrow " style="border-style: solid; border-color: black;"  aria-labelledby="menu-1">
-                 <li>
-                    <a class="dropdown-list-group-item " href="guide.html">
-
-
-                        <h4 class="h5">안내 및 내규</h4>
-                                            <p class="text-muted mb-0 font-12">
-                                                졸업논문 관련 안내 및 규정
-                                            </p>
-
-
-                        </a>
-
-                    </li>            
-                <!--<li class="dropdown-submenu ">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
+              Pages
+            </a>
+                        <ul class="dropdown-menu   dropdown-menu-xl-left  dropdown-menu-arrow " aria-labelledby="menu-2">
+                            <li class="dropdown-submenu ">
                                 <a class="dropdown-list-group-item dropdown-toggle" href="#">
                                     <div class="d-flex align-items-center">
                                         <div class="me-3 icon-shape icon-lg rounded-circle bg-light">
                                             <i class="bi bi-stack font-24"></i>
                                         </div>
                                         <div>
-                                            <h4 class="h5">Guidance</h4>
+                                            <h4 class="h5">Program</h4>
                                             <p class="text-muted mb-0 font-12">
-                                                졸업논문 관련 안내 및 규정
+                                                Program cards design.
                                             </p>
                                         </div>
                                     </div>
                                 </a>
-    
+                                <ul class="dropdown-menu dropdown-menu-lg-right">
+                                    <li>
+                                        <a class="dropdown-item" href="../pages/program-grid.html">
+                      Grid</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../pages/program-list.html">
+                      List </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../pages/program-single.html">
+                      Single</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="dropdown-submenu ">
                                 <a class="dropdown-list-group-item dropdown-toggle" href="#">
@@ -270,30 +275,14 @@
                       Terms & Condition<span class="text-primary font-12 ms-1">(New)</span></a>
                                     </li>
                                 </ul>
-                            </li>-->
+                            </li>
                         </ul>
-        
                     </li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
-                 Schedule
-                    </a>
-                    <ul class="dropdown-menu  dropdown-menu-arrow " style="border-style: solid; border-color: black;" aria-labelledby="menu-1">
-                 <li>
-                    <a class="dropdown-list-group-item " href="schedule.html">
-
-
-                        <h4 class="h5">진행 일정</h4>
-                                            <p class="text-muted mb-0 font-12">
-                                                졸업논문 관련 진행 일정
-                                            </p>
-
-
-                        </a>
-
-                    </li>  
-
-                        <!--<ul class="dropdown-menu dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+                        <ul class="dropdown-menu dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-3">
                             <li>
                                 <a class="dropdown-item" href="../pages/blog.html">
                   Blog
@@ -318,25 +307,24 @@
                                 <a class="dropdown-item" href="../pages/blog-single.html">
                   Blog Single
                 </a>
-                            </li>-->
+                            </li>
                         </ul>
                     </li>
-                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"   style="color:black" href="#" id="menu-4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Subject Management
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Resources
             </a>
-                        <ul class="dropdown-menu dropdown-menu-md dropdown-menu-arrow" style="border-style: solid; border-color: black;" aria-labelledby="menu-1">
-                            <!--<li class="dropdown-submenu">-->
-                                <a class="dropdown-list-group-item " href="management_s.html">
-                                    <h4 class="h5">대상자 전체 관리</h4>
+                        <ul class="dropdown-menu dropdown-menu-md dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-4">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-list-group-item dropdown-toggle" href="#">
+                                    <h4 class="h5 ">Case Study <span class="text-primary font-12 ms-1">(New)</span></h4>
                                     <p class="text-muted mb-0 font-12">
-                                        졸업 대상자 관리
+                                        Case Study Element Design
                                     </p>
 
 
                                 </a>
-                                <!--<ul class="dropdown-menu dropdown-menu-lg-right">
+                                <ul class="dropdown-menu dropdown-menu-lg-right">
                                     <li>
                                         <a class="dropdown-item" href="../pages/case-studies.html">
                       Case Study</a>
@@ -347,9 +335,9 @@
                                     </li>
 
                                 </ul>
-                            </li>-->
+                            </li>
 
-                            <!--<li class="dropdown-submenu">
+                            <li class="dropdown-submenu">
                                 <a class="dropdown-list-group-item dropdown-toggle" href="#">
 
 
@@ -445,7 +433,7 @@
 
                                 </a>
 
-                            </li>-->
+                            </li>
 
 
 
@@ -453,21 +441,28 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="menu-5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Applcation Management</a>
-                        <ul class="dropdown-menu dropdown-menu-arrow"  style="border-style: solid; border-color: black;" aria-labelledby="menu-5">
-                            <!--<li class="dropdown-submenu ">-->
-                                <a class="dropdown-list-group-item " href="management_af.html">
-                                    <h4 class="h5">신청서 접수 관리</h4>
-                                    <p class="text-muted mb-0 font-12">
-                                        졸업 대상자 관리
-                                    </p>
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Account
+            </a>
+                        <ul class="dropdown-menu dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-5">
+                            <li class="dropdown-submenu ">
+                                <a class="dropdown-item dropdown-toggle" href="#">
+                  Sign In
+                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg-right">
+                                    <li>
+                                        <a class="dropdown-item" href="../pages/signin-cover.html">
+                      Side Cover </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../pages/signin.html">
+                      Basic</a>
+                                    </li>
 
 
-                                </a>
                                 </ul>
-                            <!--</li>-->
-                            <!--<li class="dropdown-submenu ">
+                            </li>
+                            <li class="dropdown-submenu ">
                                 <a class="dropdown-item dropdown-toggle" href="#">
                   Sign Up
                 </a>
@@ -543,14 +538,14 @@
 
 
                                 </ul>
-                            </li>-->
+                            </li>
 
 
 
                         </ul>
                     </li>
 
-                    <!--<li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="menu-6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Shop
             </a>
@@ -633,223 +628,92 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>-->
+                    </li>
                 </ul>
-                <!--<div class="header-btn ">
+                <div class="header-btn ">
                     <a href="https://bit.ly/38DGpi8 " class="btn btn-primary btn-sm ">Buy Now</a>
-                </div>-->
+                </div>
             </div>
         </nav>
     </div>
-</div>
-<hr><br><br>
     <!-- navigation close -->
-    <!-- help center article -->
-    <div class="py-6 py-lg-6">
+</div>
+    <!-- pageheader section -->
+    <div class="bg-shape bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
-                    <!-- card -->
-                    <div class="card rounded-3 mb-4"  style="border-color: darkgray; border-width:thin ;">
-                        <!-- card body -->
-                        <div class="card-body p-4 p-lg-7">
-                            <div class="case5 container">
-                            <img src="../assets/images/notice.png" alt="" style="margin-right: 30px;"/>
-                            <span class="text-info" style="font-size: 24px; font-weight: 600;">진행 일정</span>
-                            <br><br>
-                            <div class="d-flex mb-4 align-items-md-center">
-                               
-                                <table class="table" style="border: 1px; border: solid; text-align: center;">
-                                
-                                    <thead class="thead-dark" style="background-color: lightgrey;">
-                                      <tr>
-                                        <th scope="col">단계</th>
-                                        <th scope="col">시작 일정</th>
-                                        <th scope="col">종료 일정</th>
-                                        <th scope="col">상태</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">신청 접수</th>
-                                        <td>2022-09-13</td>
-                                        <td>2022-12-04</td>
-                                        <td>마감</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">제안서</th>
-                                        <td>2022-09-13</td>
-                                        <td>2022-12-05</td>
-                                        <td>마감</td>
-                                      </tr>
-
-                                      <tr>
-                                        <th scope="row">중간 보고서</th>
-                                        <td>2022-09-15</td>
-                                        <td>2022-12-08</td>
-                                        <td>마감</td>
-                                      </tr>
-
-                                      <tr>
-                                        <th scope="row">최종 보고서</th>
-                                        <td>2022-10-17</td>
-                                        <td>2022-12-08</td>
-                                        <td>마감</td>
-                                      </tr>
-
-                                      <tr>
-                                        <th scope="row">최종 통과</th>
-                                        <td>2022-12-09</td>
-                                        <td>2023-01-28</td>
-                                        <td>마감</td>
-                                      </tr>
-
-                                      <tr>
-                                        <th scope="row">기타 자격</th>
-                                        <td>2022-09-15</td>
-                                        <td>2022-12-08</td>
-                                        <td>마감</td>
-                                      </tr>
-                                      
-                                    </tbody>
-                                  </table> 
-
-							</div>
-                            <a href="#" class="btn btn-light btn-sm" style="float: right; margin-top: auto;">수정</a>
-                            <br>
-                            <hr class="my-4" style="height: 3px; background-color: darkblue;" /><br>
-                                <div>
-                                    
-									<!-- overview -->
-									<h3 style="color: darkblue;">● 신청 접수</h3>
-                                    
-									<h5 style="color: gray; line-height: 200%;">
-										매 학기 개강 후 2주 이내 신청서를 작성하여 접수해야 합니다.<br>
-                                        신청서는 졸업논문 과정을 시작하기 위한 필수 요건으로 졸업 시기, 
-                                        졸업논문 유형, 자격증 등 <br>
-                                        기타 자격 준비 여부 등을 결정하여 양식에 따라 작성하여 신청합니다.
-                                        <a href="#" class="btn btn-light btn-sm" style="float: right; margin-top: auto;">수정</a>
-                                    </h5><br>
-                                
-
-									<h3 style="color: darkblue;">● 제안서</h3>
-                                    
-									<h5 style="color: gray; line-height: 200%;">
-										제안서는 논문 제목과 대략의 계획을 작성한 한 페이지 문서 양식에 따라 작성하여 신청합니다.<br> 
-                                        제안서는 캡스톤 설계 프로젝트의 주제로 제출하는 것을 권장합니다.<br> 
-                                        <a href="#" class="btn btn-light btn-sm" style="float: right; margin-top: auto;">수정</a>
-                                        분량이 짧을 경우, 반려될 수 있음을 알려드립니다
-                                    </h5><br>
-    
-
-                                    <h3 style="color: darkblue;">● 중간 보고서</h3>
-                                    
-									<h5 style="color: gray; line-height: 200%;">
-										중간보고서는 10쪽 내외의 문서로 졸업논문의 약 50% 정도 진행된 결과를 
-                                        졸업 논문 형식에 맞게 작성하여 제출하게 됩니다.<br>
-                                        화면, 흐름, DB 설계 등을 포함하게 됩니다.
-                                        <a href="#" class="btn btn-light btn-sm" style="float: right; margin-top: auto;">수정</a>
-                                    </h5><br>
-
-                                    <h3 style="color: darkblue;">● 최종 보고서</h3><br>
-                                    
-									<h5 style="color: gray; line-height: 200%;">
-										종강 전 졸업논문 최종 보고서를 제출합니다.<br>
-                                        최종 보고서는 졸업논문 양식에 따라 개발 또는 조사 논문의 주제를 체계적으로 정리한 것으로<br>
-                                        주제, 목표, 설계, 구현, 평가 등의 내용을 포함하고 서론, 본론, 결론의 순서로 구성되어야 합니다.<br>
-                                        인터넷 등 타인이 작성한 내용을 인용 없이 복사 게재할 수 없습니다.
-                                        <a href="#" class="btn btn-light btn-sm" style="float: right; margin-top: auto;">수정</a>
-                                    </h5>
-                                    <br>
-
-                                    <h3 style="color: darkblue;">● 최종 통과</h3><br>
-                                    
-									<h5 style="color: gray; line-height: 200%;">
-										최종 보고서는 지도교수 포함 3인 이상의 심사위원의 평가에 의해 통과 여부가 결정됩니다.<br>
-                                        심사에서 통과된 경우 승인으로 표시됩니다.
-                                        <a href="#" class="btn btn-light btn-sm" style="float: right; margin-top: auto;">수정</a>
-                                    </h5><br>
-
-                                    <h3 style="color: darkblue;">● 기타 자격</h3><br>
-                                    
-									<h5 style="color: gray; line-height: 200%;">
-										최종 보고서 또는 기타 자격 확인서가 승인된 경우 학과장의 심의에 의해 최종 통과가 결정됩니다.<br> 
-                                        최종 통과 후 졸업 자격으로 인정됩니다.
-                                        <a href="#" class="btn btn-light btn-sm" style="float: right; margin-top: auto;">수정</a>
-                                    </h5>
-                                    <br>
-                                    
-									<!-- blockquote -->
-									<!--<blockquote
-										class="blockquote  border-start border-primary border-start-3"
-									>
-										<p class="mb-0 font-italic font-16 ms-3">
-											Blockquote. Lorem ipsum dolor sit amet, consectetur
-											adipiscing elit. Vivamus magna. Cras in mi at felis
-											aliquet congue. Ut a est eget ligula molestie gravida.
-											Curabitur massa. Donec eleifend, libero at sagittis
-											mollis, tellus est malesuada tellus, at luctus turpis elit
-											sit amet quam. Vivamus pretium ornare est.
-										</p>-->
-										<!-- footer -->
-										<!--<footer class="blockquote-footer mt-3 text-dark ms-3">
-											<cite title="Source Title"> Andrew Watkins</cite>
-										</footer>-->
-									</blockquote>
-									<!-- order -->
-									<!--<ol>
-										<li>Ordered list</li>
-										<li>Suspendisse pellentesque orci quis auctor feugiat.</li>
-										<li>
-											Pellentesque consequat libero ut leo accumsan ullamcorper.
-										</li>
-										<li>Etiam et dolor faucibus libero aliquam tempor.</li>
-									</ol>
-									<ul>
-										<li>Phasellus iaculis neque</li>
-										<li>Purus sodales ultricies</li>
-										<li>Vestibulum laoreet porttitor sem</li>
-										<li>Ac tristique libero volutpat at</li>
-									</ul>
-									<p>
-										Maecenas a nisl tellus. Maecenas convallis neque vitae neque
-										euismod vehicula. Donec blandit viverra lorem, eu commodo
-										magna ullamcorper eget. Sed suscipit dolor fringilla varius
-										vulputate. Pellentesque habitant morbi tristique senectus et
-										netus et malesuada fames ac turpis egestas.
-									</p>
-									<p class="mb-4">
-										If you have any questions, please don't hesitate to
-										<a href="#"> contact us.</a>
-                                        </p>
-                                        <a href="#" class="badge bg-secondary-soft text-uppercase fw-bold">Account</a
-									>
-									<a
-										href="#"
-										class="badge bg-secondary-soft text-uppercase fw-bold"
-										>General</a
-									>-->
-								</div>
-
-								<hr class="my-4" style="height: 3px; background-color: darkblue;" /><br>
-								<!--<div class="text-center mb-4">
-									<h5 class="mb-3">Was this article helpful?</h5>
-									<a href="#" class="btn btn-primary btn-sm">Yes</a>
-                                        <a href="#" class="btn btn-light btn-sm">No</a>
-                                </div>-->
-                                <!--<small>Still stuck?<a href="#" class="ms-2">How can we help?</a>
-								</small>-->
-                            </div>
-                        </div>
-                        <!-- card -->
-                    
+                <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                    <div class="py-lg-14 py-12 text-center mb-4">
+                        <h1 class="text-white display-4 mb-3">Terms & Condition</h1>
+                        <p class="text-white-50 mb-0">Effective date: <span class="text-primary">23rd of March, 2021</span></p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- footer -->
-<!--<div class="footer pt-11 pb-3 bg-dark text-body">
+    </div>
+    <!-- dashboard nav -->
+    <div class="py-12 ">
+        <div class="container">
+            <!-- row -->
+            <div class="row justify-content-center">
+                <!-- col -->
+                <div class="col-lg-8 col-md-12 col-12">
+                    <h1 class="fw-bold mb-3">This is a H1, Perfect's for titles.</h1>
+                    <p class=" mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stress, for the United States element ante. Duis cursus, mi quis viverra ornare, eros pain, sometimes none at all, freedom of the living creature was as the profit and financial
+                        security. Jasmine neck adapter and just running it lorem makeup sad smile of the television set.</p>
+                    <p class="mb-1 "><span class="text-dark fw-semi-bold">Email: </span>hello@coach.com </p>
+                    <p class="mb-1 "><span class="text-dark fw-semi-bold">Address: </span>52, Komal Villas, Mansarovar Vadodara - 374321</p>
+                    <!-- para -->
+                    <div class="d-flex mt-5">
+                        <div>
+                            <h3 class="fw-bold">A</h3>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="fw-bold">This is a H3's perfect for the titles.</h3>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stress, for the United States element ante. Duis cursus, mi quis viverra ornare, eros pain, none at all, freedom of the living creature was as the profit and financial
+                                security. Jasmine neck adapter and just running it lorem makeup hairstyle. Now sad smile of the television set.</p>
+                        </div>
+                    </div>
+                    <!-- para -->
+                    <div class="d-flex mt-3">
+                        <div>
+                            <h3 class="fw-bold">B</h3>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="fw-bold">This is a H3's perfect for the titles.</h3>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stress, for the United States element ante. Duis cursus, mi quis viverra ornare, eros pain, none at all, freedom of the living creature was as the profit and financial
+                                security. Jasmine neck adapter and just running it lorem makeup hairstyle. Now sad smile of the television set.</p>
+                        </div>
+                    </div>
+                    <!-- para -->
+                    <div class="mt-5">
+                        <h2 class="fw-bold">This is a H2's perfect for the titles.</h2>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stress, for the United States element ante. Duis cursus, mi quis viverra ornare, eros pain,<a href="https://codescandy.com/coach/index.html">https://codescandy.com/coach/index.html</a>                            , sometimes none at all, freedom of the living creature was as the profit and financial security. Jasmine neck adapter and just running it lorem makeup hairstyle. Now sad smile of the television set.</p>
+                        <!-- list -->
+                        <ul class="">
+                            <li>More than 60+ components</li>
+                            <li>Five ready tests</li>
+                            <li>Coming soon page</li>
+                            <li>Check list with left icon</li>
+                            <li>And much more ...</li>
+                        </ul>
+                    </div>
+                    <!-- para -->
+                    <div class="mt-5">
+                        <h2 class="fw-bold">This is a H2's perfect for the titles.</h2>
+                        <p class="">Coach ui takes the privacy of its users very seriously. For the current our Privacy Policy, please click <a href="https://codescandy.com/coach/index.html">here</a>.</p>
+                        <p class="mb-6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, mi quis viverra ornare, eros pain, sometimes none at all, freedom of the living creature was as the profit and financial security. Jasmine neck adapter and just
+                            running it lorem makeup hairstyle. Now sad smile of the television set.</p>
+                        <h2 class="fw-bold">Changes about terms</h2>
+                        <p class="">If we change our terms of use we will post those changes on this page. Registered users will be sent an email that outlines changes made to the terms of use.</p>
+                        <p class="">Questions? Please email us at <a href="#">hello@example.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+<div class="footer pt-11 pb-3 bg-dark text-body">
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-md-4 col-6">
@@ -925,12 +789,9 @@
             </div>
         </div>
     </div>
-</div>-->
-
-        <!-- Optional JavaScript -->
-
-
-        <!-- Libs JS -->
+</div>
+    <!-- Optional JavaScript -->
+    <!-- Libs JS -->
 <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
 <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>

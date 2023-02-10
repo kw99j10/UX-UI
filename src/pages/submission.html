@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--신청서 제출(보기)화면-->
+<!--관리자 버전-->
 <head>
-    <title>Coach - Shop Checkout Page</title>
+    <title>Application Submission</title>
     <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,46 +27,42 @@
 <body>
 
     <!-- header -->
-<div class="header fixed-top border-3 border-top border-primary">
+    <div class="header position-sticky border-3 border-top border-white bg-cover">
     <!-- navigation start -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-default">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.svg" alt="" /></a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="main.html"><img src="../assets/images/klogo.jpg" alt="" /></a>
+            <button class="navbar-toggler collapsed" type="button" style="background-color: rosybrown;" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar top-bar mt-0"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
       </button>
             <div class="collapse navbar-collapse" id="navbar-default">
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" style="background-color: rosybrown;" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-times"></i>
         </button>
-                <ul class="navbar-nav ms-auto me-lg-3 ">
-                    <li class="nav-item dropdown disabled">
-                        <a class="nav-link d-lg-none" href="#">
-              Menu
-            </a>
-                    </li>
+                <ul class="navbar-nav ms-auto me-lg-3 " >
 
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
-              Homepages
-            </a>
-                        <ul class="dropdown-menu  dropdown-menu-arrow " aria-labelledby="menu-1">
+                        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="menu-1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
+                    Notice
+                    </a>
+                        <ul class="dropdown-menu  dropdown-menu-arrow" style="border-style: solid; border-color: black;" aria-labelledby="menu-1">
                             <li>
-                                <a class="dropdown-list-group-item " href="../pages/fitness-coach.html">
+                                <a class="dropdown-list-group-item"  href="notification.html">
 
 
-                                    <h4 class="h5">Fitness<span class="badge bg-success ms-2 py-1">New</span></h4>
+                                    <h4 class="h5">공지사항</h4>
                                     <p class="text-muted mb-0 font-12">
-                                        Fitness landing page
+                                        졸업논문 관련 공지 알림
                                     </p>
 
 
                                 </a>
 
                             </li>
-                            <li>
+                            
+                            <!--<li>
                                 <a class="dropdown-list-group-item " href="../index.html">
 
 
@@ -116,43 +113,43 @@
 
                                 </a>
 
-                            </li>
+                            </li>-->
 
                         </ul>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
-              Pages
-            </a>
-                        <ul class="dropdown-menu   dropdown-menu-xl-left  dropdown-menu-arrow " aria-labelledby="menu-2">
-                            <li class="dropdown-submenu ">
+                        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
+                 Guide
+                    </a>
+                    <ul class="dropdown-menu  dropdown-menu-arrow " style="border-style: solid; border-color: black;"  aria-labelledby="menu-1">
+                 <li>
+                    <a class="dropdown-list-group-item " href="guide.html">
+
+
+                        <h4 class="h5">안내 및 내규</h4>
+                                            <p class="text-muted mb-0 font-12">
+                                                졸업논문 관련 안내 및 규정
+                                            </p>
+
+
+                        </a>
+
+                    </li>            
+                <!--<li class="dropdown-submenu ">
                                 <a class="dropdown-list-group-item dropdown-toggle" href="#">
                                     <div class="d-flex align-items-center">
                                         <div class="me-3 icon-shape icon-lg rounded-circle bg-light">
                                             <i class="bi bi-stack font-24"></i>
                                         </div>
                                         <div>
-                                            <h4 class="h5">Program</h4>
+                                            <h4 class="h5">Guidance</h4>
                                             <p class="text-muted mb-0 font-12">
-                                                Program cards design.
+                                                졸업논문 관련 안내 및 규정
                                             </p>
                                         </div>
                                     </div>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-lg-right">
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/program-grid.html">
-                      Grid</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/program-list.html">
-                      List </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/program-single.html">
-                      Single</a>
-                                    </li>
-                                </ul>
+    
                             </li>
                             <li class="dropdown-submenu ">
                                 <a class="dropdown-list-group-item dropdown-toggle" href="#">
@@ -274,14 +271,30 @@
                       Terms & Condition<span class="text-primary font-12 ms-1">(New)</span></a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>-->
                         </ul>
+        
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blog
-            </a>
-                        <ul class="dropdown-menu dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-3">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
+                 Schedule
+                    </a>
+                    <ul class="dropdown-menu  dropdown-menu-arrow " style="border-style: solid; border-color: black;" aria-labelledby="menu-1">
+                 <li>
+                    <a class="dropdown-list-group-item " href="schedule.html">
+
+
+                        <h4 class="h5">진행 일정</h4>
+                                            <p class="text-muted mb-0 font-12">
+                                                졸업논문 관련 진행 일정
+                                            </p>
+
+
+                        </a>
+
+                    </li>  
+
+                        <!--<ul class="dropdown-menu dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-3">
                             <li>
                                 <a class="dropdown-item" href="../pages/blog.html">
                   Blog
@@ -306,24 +319,25 @@
                                 <a class="dropdown-item" href="../pages/blog-single.html">
                   Blog Single
                 </a>
-                            </li>
+                            </li>-->
                         </ul>
                     </li>
+                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Resources
+                        <a class="nav-link dropdown-toggle"   style="color:black" href="#" id="menu-4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Subject Management
             </a>
-                        <ul class="dropdown-menu dropdown-menu-md dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-4">
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-list-group-item dropdown-toggle" href="#">
-                                    <h4 class="h5 ">Case Study <span class="text-primary font-12 ms-1">(New)</span></h4>
+                        <ul class="dropdown-menu dropdown-menu-md dropdown-menu-arrow" style="border-style: solid; border-color: black;" aria-labelledby="menu-1">
+                            <!--<li class="dropdown-submenu">-->
+                                <a class="dropdown-list-group-item " href="management_s.html">
+                                    <h4 class="h5">대상자 전체 관리</h4>
                                     <p class="text-muted mb-0 font-12">
-                                        Case Study Element Design
+                                        졸업 대상자 관리
                                     </p>
 
 
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-lg-right">
+                                <!--<ul class="dropdown-menu dropdown-menu-lg-right">
                                     <li>
                                         <a class="dropdown-item" href="../pages/case-studies.html">
                       Case Study</a>
@@ -334,9 +348,9 @@
                                     </li>
 
                                 </ul>
-                            </li>
+                            </li>-->
 
-                            <li class="dropdown-submenu">
+                            <!--<li class="dropdown-submenu">
                                 <a class="dropdown-list-group-item dropdown-toggle" href="#">
 
 
@@ -432,7 +446,7 @@
 
                                 </a>
 
-                            </li>
+                            </li>-->
 
 
 
@@ -440,28 +454,21 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Account
-            </a>
-                        <ul class="dropdown-menu dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-5">
-                            <li class="dropdown-submenu ">
-                                <a class="dropdown-item dropdown-toggle" href="#">
-                  Sign In
-                </a>
-                                <ul class="dropdown-menu dropdown-menu-lg-right">
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/signin-cover.html">
-                      Side Cover </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/signin.html">
-                      Basic</a>
-                                    </li>
+                        <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="menu-5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Applcation Management</a>
+                        <ul class="dropdown-menu dropdown-menu-arrow"  style="border-style: solid; border-color: black;" aria-labelledby="menu-5">
+                            <!--<li class="dropdown-submenu ">-->
+                                <a class="dropdown-list-group-item " href="management_af.html">
+                                    <h4 class="h5">신청서 접수 관리</h4>
+                                    <p class="text-muted mb-0 font-12">
+                                        졸업 대상자 관리
+                                    </p>
 
 
+                                </a>
                                 </ul>
-                            </li>
-                            <li class="dropdown-submenu ">
+                            <!--</li>-->
+                            <!--<li class="dropdown-submenu ">
                                 <a class="dropdown-item dropdown-toggle" href="#">
                   Sign Up
                 </a>
@@ -537,14 +544,14 @@
 
 
                                 </ul>
-                            </li>
+                            </li>-->
 
 
 
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <!--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="menu-6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Shop
             </a>
@@ -627,25 +634,25 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li>-->
                 </ul>
-                <div class="header-btn ">
+                <!--<div class="header-btn ">
                     <a href="https://bit.ly/38DGpi8 " class="btn btn-primary btn-sm ">Buy Now</a>
-                </div>
+                </div>-->
             </div>
         </nav>
     </div>
     <!-- navigation close -->
 </div>
     <!-- pageheader section -->
-    <div class="bg-shape bg-dark">
+    <!--<div class="bg-shape bg-cover">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                     <div class="pt-lg-18 pb-lg-14 pt-14 pb-12 ">
-                        <h1 class="h2 text-white">Shop</h1>
+                        <h1 class="h2 text-black">졸업 논문</h1>-->
                         <!-- breadcrumb -->
-                        <div class="custom-breadcrumb">
+                        <!--<div class="custom-breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
                                     <a href="../index.html">Home</a>
@@ -662,40 +669,41 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
+    <hr><br><br>
     <!-- shop checkout  -->
-    <div class="py-6 py-lg-12">
+    <div class="py-6 py-lg-6">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-7 col-12">
+                <div class="col-lg-6 col-md-7 col-8">
                     <!-- card -->
-                    <div class="card mb-4">
+                    <div class="card mb-4" style="border: solid; border-color: black;">
                         <!-- card header -->
                         <div class="card-header bg-white p-4">
-                            <h4 class="mb-0">Billing Address</h4>
+                            <h4 class="mb-0 text-info" style="text-align: center;">학생 정보</h4>
                         </div>
                         <!-- card body -->
-                        <div class="card-body p-4">
+                        <div class="card-body p-5">
                             <!-- form -->
                             <form class="row">
                                 <div class="mb-3 col-12 col-lg-6 col-md-12">
-                                    <label class=" form-label" for="fname">First Name</label>
-                                    <input type="text" id="fname" class="form-control" placeholder="First Name" required>
+                                    <label class="form-label" for="name">이름</label>
+                                    <input type="text" id="name" class="form-control" placeholder="홍길동" readonly>
                                 </div>
                                 <div class="mb-3 col-12 col-lg-6 col-md-12">
-                                    <label class=" form-label" for="lname">Last Name</label>
-                                    <input type="text" id="lname" class="form-control" placeholder="Last Name" required>
+                                    <label class=" form-label" for="number">학번</label>
+                                    <input type="text" id="number" class="form-control" placeholder="201811111"  readonly>
                                 </div>
                                 <div class="mb-3 col-12 col-lg-6 col-md-12">
-                                    <label class=" form-label" for="email">Email Address</label>
-                                    <input class="form-control " type="email" placeholder="Email here" id="email" name="email" />
+                                    <label class=" form-label" for="major" >소속 학과</label>
+                                    <input class="form-control " type="major" placeholder="컴퓨터공학부"  readonly />
                                 </div>
                                 <div class="mb-3 col-12 col-lg-6 col-md-12">
-                                    <label class=" form-label" for="phone">Phone</label>
-                                    <input type="text" id="phone" class="form-control" placeholder="Phone" required>
+                                    <label class=" form-label" for="time">졸업 시기</label>
+                                    <input type="text" id="time" class="form-control" placeholder="2024-03-02"  readonly>
                                 </div>
 
-                                <div class="mb-3 col-12 col-lg-6 col-md-12">
+                                <!--<div class="mb-3 col-12 col-lg-6 col-md-12">
                                     <label class=" form-label" for="address">Street Address</label
 										>
 										<input
@@ -739,62 +747,61 @@
                                 <div class="mb-3 col-12 col-lg-4 col-md-12">
                                     <label class=" form-label" for="zipcode">ZipCode</label>
                                     <input type="text" id="zipcode" class="form-control" placeholder="ex:000000" required />
-                                </div>
+                                </div>-->
+                                <hr>
+								<div class="col-12 ">
+										<div class="border-bottom mb-4 pt-4 pb-4">
+									<h4 class="text-info" style="text-align: center;">기타 자격 준비사항</h4>
+								</div>
+									</div>
+								<div class="col-12 mb-4">
+
+								<div
+									class="text-dark"
+								>
+                                준비 중인 항목이 있으면, 모두 표시하시오.(기타 자격 요건을 확인해 주세요)
+								</div>
+									</div>
+                                
                                 <div class="col-12">
                                     <div class="form-check custom-checkbox  mt-4 pt-4  border-top">
-                                        <input type="checkbox" class="form-check-input" id="CheckboxOne" />
-                                        <label class="form-check-label" for="CheckboxOne">Shipping address is the same as my billing
-												address</label
-											>
-										</div>
-										<div class="form-check custom-checkbox mb-3">
-											<input
-												type="checkbox"
-												class="form-check-input"
-												id="CheckboxTwo"
-											/>
-											<label class="form-check-label" for="CheckboxTwo"
-												>Save this information for next time</label
-											>
-										</div>
-									</div>
-									<div class="col-12 ">
-										<div class="border-bottom mb-4 pt-4 pb-4">
-									<h4 class="mb-0">Payment Method</h4>
-								</div>
-									</div>
-									<div class="col-12 mb-4">
+                                        <input type="checkbox" checked onclick="return false" class="form-check-input" id="CheckboxOne">
+                                        <label class="form-check-label" for="CheckboxOne">
+                                            자격증
+                                        </label>
+                                    </div>
 
-								<div
-									class="form-check custom-radio form-check-inline me-1"
-								>
-									<input
-										type="radio"
-										id="paymentRadioOne"
-										name="paymentRadioOne"
-										class="form-check-input" checked
-									/>
-									<label class="form-check-label" for="paymentRadioOne"
-										>Credit card</label
-									>
-								</div>
-								<div
-									class="form-check custom-radio form-check-inline me-1"
-								>
-									<input
-										type="radio"
-										id="paymentRadioTwo"
-										name="paymentRadioOne"
-										class="form-check-input"
-									/>
-									<label class="form-check-label" for="paymentRadioTwo"
-										>Debit card</label
-									>
-								</div>
-									</div>
+                                    <div class="form-check custom-checkbox  mt-4 pt-4  border-top">
+                                        <input type="checkbox" onclick="return false" class="form-check-input" id="CheckboxOne">
+                                        <label class="form-check-label" for="CheckboxOne">
+                                            공모전
+                                        </label>
+                                    </div>
 
+                                    <div class="form-check custom-checkbox  mt-4 pt-4  border-top">
+                                        <input type="checkbox" onclick="return false" class="form-check-input" id="CheckboxOne">
+                                        <label class="form-check-label" for="CheckboxOne">
+                                            학술대회 발표
+                                        </label>
+                                    </div>
 
-									<div class="mb-3 col-12 col-lg-6 col-md-12">
+                                    <div class="form-check custom-checkbox  mt-4 pt-4  border-top">
+                                        <input type="checkbox" onclick="return false" class="form-check-input" id="CheckboxOne">
+                                        <label class="form-check-label" for="CheckboxOne">
+                                            논문
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check custom-checkbox  mt-4 pt-4  border-top">
+                                        <input type="checkbox" onclick="return false" class="form-check-input" id="CheckboxOne">
+                                        <label class="form-check-label" for="CheckboxOne">
+                                            기타:<input type="text" readonly>
+                                        </label>
+                                    </div>
+                
+                                </div>
+
+									<!--<div class="mb-3 col-12 col-lg-6 col-md-12">
 										<label for="nameoncard" class="form-label "
 											>Name on card</label
 										>
@@ -838,85 +845,83 @@
                                         <button class="btn btn-primary" type="submit">
 											Continue to checkout
 										</button>
-                                    </div>
+                                    </div>-->
                             </form>
                             </div>
                         </div>
                     </div>
-
                     <!-- order summary -->
-                    <div class="col-lg-4 col-md-5 col-12 mt-lg-0 mt-5">
-                        <div class="mb-4">
-                            <h2 class="h4">Order summary</h2>
-                        </div>
+                    <div class="col-lg-6 col-md-7 col-8">
                         <!-- card -->
-                        <div class="card">
+                        <div class="card" style="border: solid; border-color: black;">
                             <!-- list -->
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                                    <h5 class="mb-0">Subtotal</h5>
-                                    <span>$16.00</span>
+                                <li class="list-group-item p-3" style="text-align: center;">
+                                    <h4 class="text-info">졸업 논문 진행 일정</h4>
                                 </li>
+                            
                                 <!-- list -->
-                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                                    <h5 class="mb-0">Discount</h5>
-                                    <span class="text-success">$-2.00</span>
-                                </li>
-                                <!-- list -->
-                                <li class="list-group-item p-3">
-                                    <div class=" d-flex justify-content-between align-items-center mb-4">
-                                        <h5 class="mb-0">Delivery</h5>
-                                        <span class="text-dark text-uppercase">Free</span>
-                                    </div>
+                                <li class="list-group-item p-3" style="text-align: left;">
+                                    <br>
 
                                     <div class="form-check custom-radio mb-3">
-                                        <input type="radio" id="freeDelivery" name="customRadio" class="form-check-input" checked>
                                         <label class="form-check-label" for="freeDelivery">
-											Free - Standard delivery<br>
-											<small>Shipment may take 5-6 business days.</small>
+											● 2022-09-13 ~ 12-04 : 신청 접수 제출<br>
+										
 										</label>
                                     </div>
                                     <div class="form-check custom-radio mb-3">
-                                        <input type="radio" id="expressDelivery" name="customRadio" class="form-check-input" />
-                                        <label class="form-check-label" for="expressDelivery">$2.99 - Express delivery<br>
-											<small>Shipment may take 5-6 business days.</small></label
+                                        <label class="form-check-label" for="expressDelivery">● 2022-09-13 ~ 12-05 : 제안서 제출<br>
+											</label
 										>
 									</div>
-								</li>
-								<!-- list -->
-								<li
-									class="list-group-item d-flex justify-content-between align-items-center p-3"
-								>
-									<h5 class="mb-0">Tax</h5>
-									<span class="text-dark">---</span>
-								</li>
-								<!-- list -->
-								<li
-									class="list-group-item d-flex justify-content-between align-items-center p-3"
-								>
-									<h5 class="mb-0">Total</h5>
-									<span class="text-primary">$14.00</span>
-								</li>
-								<!-- list -->
-								<li class="list-group-item p-3">
-									<div class="d-grid">
-									<a
-										href="#"
 
-										class="btn btn-primary"
-										>Procees to checkout
-									</a>
-								</div>
+                                    <div class="form-check custom-radio mb-3">
+                                        <label class="form-check-label" for="expressDelivery">● 2022-09-15 ~ 12-08 : 중간 보고서 제출<br>
+											</label
+										>
+									</div>
+
+                                    <div class="form-check custom-radio mb-3">
+                                        <label class="form-check-label" for="expressDelivery">● 2022-10-17 ~ 12-08 : 최종보고서 제출<br>
+											</label
+										>
+									</div>
+
+                                    <div class="form-check custom-radio mb-3">
+                                        <label class="form-check-label" for="expressDelivery">● 2022-12-09 ~ 01-28 : 최종 통과 제출<br>
+											</label
+										>
+									</div>
+
+                                    <div class="form-check custom-radio mb-3">
+                                        <label class="form-check-label" for="expressDelivery">● 2022-09-15 ~ 12-08 : 기타자격 제출<br>
+											</label
+										>
+									</div>
+                                    <div class="col-12">
+                                        <div class="form-check custom-checkbox  mt-4 pt-4  border-top">
+                                            <input type="checkbox" checked onclick="return false" class="form-check-input" id="CheckboxOne">
+                                            <label class="form-check-label" for="CheckboxOne">위 일정과 운영세칙을 확인하였으며, 세칙의 규정을 준수하겠습니다.
+                                            </label>
+                                        </div>
+                                    </div>
 								</li>
+							
 							</ul>
 						</div>
+                        <br>
+                        <div>
+                            <a href="#" class="btn btn-light btn-sm" style="float: right; margin-top: auto;">뒤로</a>
+                        </div>
 					</div>
 				</div>
 			</div>
 		</div>
+        
 
 		<!-- footer -->
-<div class="footer pt-11 pb-3 bg-dark text-body">
+<!--<div class="footer pt-11 pb-3 bg-dark text-body">
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-md-4 col-6">
@@ -992,7 +997,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 		<!-- Optional JavaScript -->
 
