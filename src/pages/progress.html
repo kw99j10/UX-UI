@@ -2,7 +2,7 @@
 <html lang="en">
 <!--신청 접수 흐름 화면-->
 <head>
-    <title>Coach - Dashboard Subscription Plan Page</title>
+    <title>Progress</title>
     <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,46 +26,42 @@
 <body>
 
     <!-- header -->
-<div class="header position-sticky border-3 border-top border-primary bg-dark">
+<div class="header position-sticky border-3 border-top border-white bg-cover">
     <!-- navigation start -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-default">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.svg" alt="" /></a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="main.html"><img src="../assets/images/klogo.jpg" alt="" /></a>
+            <button class="navbar-toggler collapsed" type="button" style="background-color: rosybrown;" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar top-bar mt-0"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
       </button>
             <div class="collapse navbar-collapse" id="navbar-default">
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" style="background-color: rosybrown;" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-times"></i>
         </button>
-                <ul class="navbar-nav ms-auto me-lg-3 ">
-                    <li class="nav-item dropdown disabled">
-                        <a class="nav-link d-lg-none" href="#">
-              Menu
-            </a>
-                    </li>
+                <ul class="navbar-nav ms-auto me-lg-3 " >
 
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
-              Homepages
-            </a>
-                        <ul class="dropdown-menu  dropdown-menu-arrow " aria-labelledby="menu-1">
+                        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="menu-1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
+                    Notice
+                    </a>
+                        <ul class="dropdown-menu  dropdown-menu-arrow" style="border-style: solid; border-color: black;" aria-labelledby="menu-1">
                             <li>
-                                <a class="dropdown-list-group-item " href="../pages/fitness-coach.html">
+                                <a class="dropdown-list-group-item"  href="notification.html">
 
 
-                                    <h4 class="h5">Fitness<span class="badge bg-success ms-2 py-1">New</span></h4>
+                                    <h4 class="h5">공지사항</h4>
                                     <p class="text-muted mb-0 font-12">
-                                        Fitness landing page
+                                        졸업논문 관련 공지 알림
                                     </p>
 
 
                                 </a>
 
                             </li>
-                            <li>
+                            
+                            <!--<li>
                                 <a class="dropdown-list-group-item " href="../index.html">
 
 
@@ -116,43 +112,43 @@
 
                                 </a>
 
-                            </li>
+                            </li>-->
 
                         </ul>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
-              Pages
-            </a>
-                        <ul class="dropdown-menu   dropdown-menu-xl-left  dropdown-menu-arrow " aria-labelledby="menu-2">
-                            <li class="dropdown-submenu ">
+                        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
+                 Guide
+                    </a>
+                    <ul class="dropdown-menu  dropdown-menu-arrow " style="border-style: solid; border-color: black;"  aria-labelledby="menu-1">
+                 <li>
+                    <a class="dropdown-list-group-item " href="guide.html">
+
+
+                        <h4 class="h5">안내 및 내규</h4>
+                                            <p class="text-muted mb-0 font-12">
+                                                졸업논문 관련 안내 및 규정
+                                            </p>
+
+
+                        </a>
+
+                    </li>            
+                <!--<li class="dropdown-submenu ">
                                 <a class="dropdown-list-group-item dropdown-toggle" href="#">
                                     <div class="d-flex align-items-center">
                                         <div class="me-3 icon-shape icon-lg rounded-circle bg-light">
                                             <i class="bi bi-stack font-24"></i>
                                         </div>
                                         <div>
-                                            <h4 class="h5">Program</h4>
+                                            <h4 class="h5">Guidance</h4>
                                             <p class="text-muted mb-0 font-12">
-                                                Program cards design.
+                                                졸업논문 관련 안내 및 규정
                                             </p>
                                         </div>
                                     </div>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-lg-right">
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/program-grid.html">
-                      Grid</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/program-list.html">
-                      List </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/program-single.html">
-                      Single</a>
-                                    </li>
-                                </ul>
+    
                             </li>
                             <li class="dropdown-submenu ">
                                 <a class="dropdown-list-group-item dropdown-toggle" href="#">
@@ -274,14 +270,30 @@
                       Terms & Condition<span class="text-primary font-12 ms-1">(New)</span></a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>-->
                         </ul>
+        
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blog
-            </a>
-                        <ul class="dropdown-menu dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-3">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
+                 Schedule
+                    </a>
+                    <ul class="dropdown-menu  dropdown-menu-arrow " style="border-style: solid; border-color: black;" aria-labelledby="menu-1">
+                 <li>
+                    <a class="dropdown-list-group-item " href="schedule.html">
+
+
+                        <h4 class="h5">진행 일정</h4>
+                                            <p class="text-muted mb-0 font-12">
+                                                졸업논문 관련 진행 일정
+                                            </p>
+
+
+                        </a>
+
+                    </li>  
+
+                        <!--<ul class="dropdown-menu dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-3">
                             <li>
                                 <a class="dropdown-item" href="../pages/blog.html">
                   Blog
@@ -306,24 +318,25 @@
                                 <a class="dropdown-item" href="../pages/blog-single.html">
                   Blog Single
                 </a>
-                            </li>
+                            </li>-->
                         </ul>
                     </li>
+                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Resources
+                        <a class="nav-link dropdown-toggle"   style="color:black" href="#" id="menu-4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Subject Management
             </a>
-                        <ul class="dropdown-menu dropdown-menu-md dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-4">
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-list-group-item dropdown-toggle" href="#">
-                                    <h4 class="h5 ">Case Study <span class="text-primary font-12 ms-1">(New)</span></h4>
+                        <ul class="dropdown-menu dropdown-menu-md dropdown-menu-arrow" style="border-style: solid; border-color: black;" aria-labelledby="menu-1">
+                            <!--<li class="dropdown-submenu">-->
+                                <a class="dropdown-list-group-item " href="management_s.html">
+                                    <h4 class="h5">대상자 전체 관리</h4>
                                     <p class="text-muted mb-0 font-12">
-                                        Case Study Element Design
+                                        졸업 대상자 관리
                                     </p>
 
 
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-lg-right">
+                                <!--<ul class="dropdown-menu dropdown-menu-lg-right">
                                     <li>
                                         <a class="dropdown-item" href="../pages/case-studies.html">
                       Case Study</a>
@@ -334,9 +347,9 @@
                                     </li>
 
                                 </ul>
-                            </li>
+                            </li>-->
 
-                            <li class="dropdown-submenu">
+                            <!--<li class="dropdown-submenu">
                                 <a class="dropdown-list-group-item dropdown-toggle" href="#">
 
 
@@ -432,7 +445,7 @@
 
                                 </a>
 
-                            </li>
+                            </li>-->
 
 
 
@@ -440,28 +453,21 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Account
-            </a>
-                        <ul class="dropdown-menu dropdown-menu-arrow  dropdown-menu-xl-left " aria-labelledby="menu-5">
-                            <li class="dropdown-submenu ">
-                                <a class="dropdown-item dropdown-toggle" href="#">
-                  Sign In
-                </a>
-                                <ul class="dropdown-menu dropdown-menu-lg-right">
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/signin-cover.html">
-                      Side Cover </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="../pages/signin.html">
-                      Basic</a>
-                                    </li>
+                        <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="menu-5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Applcation Management</a>
+                        <ul class="dropdown-menu dropdown-menu-arrow"  style="border-style: solid; border-color: black;" aria-labelledby="menu-5">
+                            <!--<li class="dropdown-submenu ">-->
+                                <a class="dropdown-list-group-item " href="management_af.html">
+                                    <h4 class="h5">신청서 접수 관리</h4>
+                                    <p class="text-muted mb-0 font-12">
+                                        졸업 대상자 관리
+                                    </p>
 
 
+                                </a>
                                 </ul>
-                            </li>
-                            <li class="dropdown-submenu ">
+                            <!--</li>-->
+                            <!--<li class="dropdown-submenu ">
                                 <a class="dropdown-item dropdown-toggle" href="#">
                   Sign Up
                 </a>
@@ -537,14 +543,14 @@
 
 
                                 </ul>
-                            </li>
+                            </li>-->
 
 
 
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <!--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="menu-6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Shop
             </a>
@@ -627,23 +633,24 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li>-->
                 </ul>
-                <div class="header-btn ">
+                <!--<div class="header-btn ">
                     <a href="https://bit.ly/38DGpi8 " class="btn btn-primary btn-sm ">Buy Now</a>
-                </div>
+                </div>-->
             </div>
         </nav>
     </div>
-    <!-- navigation close -->
 </div>
+<hr>
+    <!-- navigation close -->
     <!-- pageheader section -->
-    <div class="bg-shape bg-dark">
+    <div class="bg-shape bg-cover">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                     <div class="pt-lg-8 pb-lg-12 pt-5 pb-0 mb-16 ">
-                        <h1 class="h2 text-white mb-0">Subscription Plan</h1>
+                    
                     </div>
                 </div>
             </div>
@@ -653,7 +660,7 @@
     <div class="pb-12 mt-lg-n18 mt-n10">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-12">
+                <!--<div class="col-lg-3 col-md-6 col-12">
                     <nav class="navbar navbar-expand-md navbar-light  dashboard-nav mb-3 mb-lg-0 ">
                         <a class="d-xl-none d-lg-none d-md-none text-inherit  fw-bold" href="#">Menu</a
 							>
@@ -731,28 +738,45 @@
 								</div>
 							</div>
 						</nav>
-					</div>
+					</div>-->
 					<!-- dashboard subscriptions -->
-					<div class="col-lg-9 col-md-8 col-12">
-						<div class="card rounded-3 mb-4 ">
+					<div class="col-lg-12 col-md-12  col-12">
+						<div class="card rounded-3 mb-4 " style="border-color: darkgray; border-width:thin ;">
 							<!-- card header -->
 							<div class="card-header bg-white p-4">
-								<h3 class="mb-0 h4">Subscription Plan</h3>
+								<h3 class="text-info" style="text-align: center;">학생 정보</h3>
 							</div>
 							<!-- card body -->
-							<div class="card-body p-4">
-								<div class="bg-light-primary p-4 rounded-3 mb-4">
+							<div class="card-body p-4 p-md-4 p-lg-7">
+								<div class="bg-light-cover p-4 rounded-3 mb-4">
 									<div class="d-flex justify-content-between mb-4 ">
-										<div class="font-13">
-											<h4 class="mb-1">Basic Plan</h4>
-											<span>2 Clients, 250 Storage Capacity</span>
-										</div>
-										<div>
-											<span class="h4"> $19.00</span
-											><span class="font-13 text-muted ms-1">/ month</span>
-										</div>
+										<table class="table" style="border: 1px solid black; text-align: center;">
+                                
+                                            <thead class="thead-dark" style="background-color: lightgrey;">
+                                              <tr>
+                                                <th scope="col">학번</th>
+                                                <th scope="col">이름</th>
+                                                <th scope="col">소속 학과</th>
+                                                <th scope="col">졸업 시기</th>
+                                                <th scope="col">지도 교수</th>
+                                                <th scope="col">지연 횟수</th>
+                                                <th scope="col">기타 자격</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>201811111</td>
+                                                <td>홍길동</td>
+                                                <td>컴퓨터 공학부</td>
+                                                <td>2024-03-02</td>
+                                                <td>김인철</td>
+                                                <td>2회</td>
+                                                <td>캡스톤 이수</td>
+                                              </tr>
+                                            </tbody>
+                                          </table> 
 									</div>
-									<div class="d-flex justify-content-between">
+									<!--<div class="d-flex justify-content-between">
 										<div>
 											<a href="#" class="btn btn-primary btn-sm me-4"
 												>Upgrade Plan</a
@@ -766,9 +790,9 @@
 												>April 22, 2021</span
 											>
 										</div>
-									</div>
+									</div>-->
 								</div>
-								<div class="bg-light p-4 rounded-3">
+								<!--<div class="bg-light p-4 rounded-3">
 									<div class="d-flex justify-content-between mb-4">
 										<div class="font-13">
 											<h4 class="mb-1">Free Plan</h4>
@@ -792,61 +816,114 @@
 											>
 										</div>
 									</div>
-								</div>
+								</div>-->
 							</div>
 						</div>
 						<!-- card  -->
-						<div class="card mb-4 ">
+						<div class="card mb-4 "  style="border-color: darkgray; border-width:thin ;" >
+                            <br>
+                            <br>
+                            <h3 class="text-info" style="text-align: center;">진행 현황</h3>
+                 
 							<!-- card header -->
 							<div
-								class="card-header bg-white p-4 d-flex justify-content-between align-items-center"
+								class="card-header bg-white p-2 p-md-4 p-lg-10"
 							>
-								<h4 class="mb-0">Payment Methods</h4>
-								<a href="#" class="btn btn-primary btn-sm">Add New</a>
+                            <table class="table" style="border: 1px solid black; text-align: center;">
+                                
+                                <thead class="thead-dark" style="background-color: lightgrey;">
+                                  <tr>
+                                    <th scope="col">단계</th>
+                                    <th scope="col">진행 일정</th>
+                                    <th scope="col">제출 상태</th>
+                                    <th scope="col">비고</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">신청 접수</th>
+                                    <td>2022-09-13~12-05</td>
+                                    <td><a href="submission.html" class="btn btn-light btn-sm" >보기</td>
+                                    <td>2019-03-01(확인)</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">제안서</th>
+                                    <td>2022-09-13~12-06</td>
+                                    <td><a href="#" class="btn btn-light btn-sm disabled">미제출</td>
+                                    <td>2023-02-11(연장)</td>
+                                  </tr>
+
+                                  <tr>
+                                    <th scope="row">중간 보고서</th>
+                                    <td>2022-09-15~12-09</td>
+                                    <td><a href="#" class="btn btn-light btn-sm disabled">제출 불가</td>
+                                    <td>전 단계 미승인</td>
+                                  </tr>
+
+                                  <tr>
+                                    <th scope="row">최종 보고서</th>
+                                    <td>2022-10-17~12-09</td>
+                                    <td><a href="#" class="btn btn-light btn-sm disabled">제출 불가</td>
+                                    <td>전 단계 미승인</td>
+                                  </tr>
+
+                                  <tr>
+                                    <th scope="row">기타 자격</th>
+                                    <td>2022-09-15~12-09</td>
+                                    <td><a href="#" class="btn btn-light btn-sm disabled">미제출</td>
+                                    <td>마감</td>
+                                  </tr>     
+                                </tbody>
+                              </table> 
                 </div>
+                
                 <!-- card body -->
-                <div class="card-body p-4 ">
+                <div class="card-body p-lg-10 p-md-4">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item px-0 pb-3 pt-0">
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex">
-                                    <img src="../assets/images/logo-visa.svg" alt="" class="me-3" />
-                                    <div>
-                                        <h5 class="mb-0">Visa ending in 1234</h5>
-                                        <p class="mb-0 font-13">Expires in 10/2021</p>
-                                    </div>
+                            <h4 class="text-info" style="text-align: center;">비고 세부사항</h4><br>
+                           
+                            <table class="table" style="
+                                     border: 1px solid black; text-align: center;">
+                                
+                                        <thead class="thead-dark" style="background-color: lightgrey;">
+                                          <tr>
+                                            <th scope="col">일시</th>
+                                            <th scope="col">단계</th>
+                                            <th scope="col">처리 결과</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>2023-02-11</td>
+                                            <td>모두</td>
+                                            <td>연장</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2023-02-09</td>
+                                            <td>모두</td>
+                                            <td>연장</td>
+                                          </tr>
+        
+                                          <tr>
+                                            
+                                            <td>2022-12-06</td>
+                                            <td>신청 접수</td>
+                                            <td>승인</td>
+                                          </tr>
+        
+                                         
+                                        </tbody>
+                                      </table> 
+                            <!--<div class="d-flex justify-content-between">
+                                <div class="d-flex" > 
                                 </div>
                                 <div>
-                                    <span class="badge bg-success me-lg-4 me-0 ">Primary</span>
-                                    <span class="dropdown">
-													<a
-														class="text-muted text-decoration-none"
-														href="#"
-														role="button"
-														id="dropdownOne"
-
-														data-bs-toggle="dropdown"
-														aria-haspopup="true"
-														aria-expanded="false"
-													>
-														<i class="fe fe-more-vertical"></i>
-													</a>
-
-													<span
-														class="dropdown-menu dropdown-menu-right dropdown-menu-md-left"
-														aria-labelledby="dropdownOne"
-													>
-														<a class="dropdown-item" href="#">Edit</a>
-														<a class="dropdown-item" href="#">Remove</a>
-														<a class="dropdown-item" href="#"
-															>Make it Primary</a
-														>
-													</span>
-                                    </span>
+                            
                                 </div>
-                            </div>
+                            </div>-->
                         </li>
-                        <li class="list-group-item px-0 py-3">
+                        <!--<li class="list-group-item px-0 py-3">
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex">
                                     <img src="../assets/images/logo-mastercard.svg" alt="" class="me-3" />
@@ -981,98 +1058,18 @@
 											</span>
                                 </span>
                             </div>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
             <!-- card -->
-            <div class="card ">
-                <!-- card header -->
-                <div class="card-header bg-white p-4">
-                    <h4 class="mb-0">Invoice History</h4>
-                </div>
-                <!-- card body -->
-                <div class="card-body p-4 ">
-                    <!-- list -->
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item px-0 pb-3 pt-0">
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <a href="#">Invoice #00001</a>
-                                    <p class="mb-0 font-13">Billed Apr 21, 2021</p>
-                                </div>
-
-                                <div>
-                                    <a href="#" class="btn btn-light btn-sm">Pay Now</a>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- list -->
-                        <li class="list-group-item px-0 py-3">
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <a href="#">Invoice #00002</a>
-                                    <p class="mb-0 font-13">Billed Apr 21, 2021</p>
-                                </div>
-
-                                <div>
-                                    <a href="#" class="btn btn-light-success btn-sm text-success">Paid</a
-												>
-											</div>
-										</div>
-									</li>
-									<!-- list -->
-									<li class="list-group-item px-0 py-3">
-										<div class="d-flex justify-content-between">
-											<div>
-												<a href="#">Invoice #00003</a>
-                                    <p class="mb-0 font-13">Billed Apr 21, 2021</p>
-                                </div>
-
-                                <div>
-                                    <a href="#" class="btn btn-light-success btn-sm text-success">Paid</a
-												>
-											</div>
-										</div>
-									</li>
-									<!-- list -->
-									<li class="list-group-item px-0 py-3">
-										<div class="d-flex justify-content-between">
-											<div>
-												<a href="#">Invoice #00004</a>
-                                    <p class="mb-0 font-13">Billed Apr 21, 2021</p>
-                                </div>
-
-                                <div>
-                                    <a href="#" class="btn btn-light-success btn-sm text-success">Paid</a
-												>
-											</div>
-										</div>
-									</li>
-									<!-- list -->
-									<li class="list-group-item px-0 pt-3 pb-0">
-										<div class="d-flex justify-content-between">
-											<div>
-												<a href="#">Invoice #00005</a>
-                                    <p class="mb-0 font-13">Billed Apr 21, 2021</p>
-                                </div>
-
-                                <div>
-                                    <a href="#" class="btn btn-light-success btn-sm text-success">Paid</a
-												>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- footer -->
-<div class="footer pt-11 pb-3 bg-dark text-body">
+<!--<div class="footer pt-11 pb-3 bg-dark text-body">
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-md-4 col-6">
@@ -1148,7 +1145,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 		<!-- Optional JavaScript -->
 
